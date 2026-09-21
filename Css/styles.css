@@ -1,0 +1,50 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-colour: #FF00C8; /* magneta */
+    --accent-colour: #62FFED; /*medium light shade of cyan*/
+    --nav-colour-text: #FF8000; /* black */ 
+    --font-heading: "SegoeUI", sans-serif;
+    --font-body: Georgia, serif;
+    --colour-text: #000000;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--background-colour);
+    color: var(--nav-colour-text);
+    line-height: 1.6;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--accent-colour);
+}
+
+.navbar_logo{
+   display: flex;
+   width: 6.25rem;
+   height: 6.25rem;
+}
+
+.navbar_links{
+    display: flex;
+    justify-content: center;
+    gap: calc(100rem/16);
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar_links a{
+    color: var(--nav-colour-text);
+    text-decoration: none;
+    font-size: calc(40rem/16)
+}
